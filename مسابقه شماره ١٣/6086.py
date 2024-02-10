@@ -18,8 +18,9 @@ def countRange(l, r):
                 count += 1
     return count
 
+
 i = int(input())
 for j in range(i):
-    l, r = map (int, input().split())
+    l, r = map(int, input().split())
     count = countRange(l, r)
     print(count % (10**9 + 7))
